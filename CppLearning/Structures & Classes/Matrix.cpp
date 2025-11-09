@@ -16,9 +16,11 @@ public:
         this->height = h;
         this->lenght = l;
         this->dimensions = new int[2];
-        this->matrix = new float*[height];
         this->dimensions[0] = height;
         this->dimensions[1] = lenght;
+        this->matrix = new float*[height];
+        for (int i = 0; i < height; i++)
+            this->matrix[i] = new float[lenght];
     }
 
     string getDimensions()
@@ -33,7 +35,7 @@ public:
             float* row = new float[lenght];
             for (int j = 0; j < lenght; j++) 
             {
-                row[j] = 1;
+                row[j] = 2;
             }
             matrix[i] = row;
         }
@@ -58,13 +60,33 @@ public:
         return result;
     }
 
+    Matrix add(const Matrix& m2)
+    {
+        Matrix sum(height, lenght);
+        for (int i = 0; i < height; i++)
+        {
+            float* row = new float[lenght];
+            for (int j = 0; j < lenght; j++)
+            {
+                row[j] = this->matrix[i][j] + m2.matrix[i][j];
+            }
+            sum.matrix[i] = row;
+        }
+        return sum;
+    }
+
 };
 
 int main()
 {
-    Matrix matriz = Matrix(3,3);
-    cout << matriz.getDimensions() << endl;
-    matriz.setValues();
-    cout << matriz.toString() << endl;
+    Matrix m1 = Matrix(3,3);
+    Matrix m2 = Matrix(3, 3);
+    cout << m1.getDimensions() << endl;
+    m1.setValues();
+    m2.setValues();
+    cout << m1.toString() << endl;
+    Matrix mr = m1.add(m2);
+    cout << "====================" << endl;
+    cout << mr.toString() << endl;
     return 0;
 }
