@@ -66,5 +66,5 @@ float getDistance(Point p1, Point p2)
 
 void getChars(Point p1)
 {
-    cout << "(" << p1.x << ", " << p1.y << ")";
+    cout << "(" << p1.x << ", " << p1.y << ")" << endl;
 }
