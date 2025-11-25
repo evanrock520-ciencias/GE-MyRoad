@@ -4,4 +4,4 @@ Today i tried to understand what a pointer is. I saw the Cherno video [Pointers 
 
 They are basically variables that store a memory address.
 
-I'm also trying to improve my English writing because it's a weak point I'm struggling with. So this is a new habit that I want to do for every single program that I could write soon. 
+I'm also trying to improve my English writing because it's a weak point I'm struggling with. So this is a new habit I want to practice in every program I write from now on.
