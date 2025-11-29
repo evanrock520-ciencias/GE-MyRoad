@@ -60,7 +60,7 @@ public:
         return result;
     }
 
-    Matrix add(const Matrix& m2)
+    Matrix operator+(const Matrix& m2)
     {
         Matrix sum(height, lenght);
         for (int i = 0; i < height; i++)
@@ -75,7 +75,7 @@ public:
         return sum;
     }
 
-    Matrix substract(const Matrix& m2)
+    Matrix operator-(const Matrix& m2)
     {
         Matrix substract(height, lenght);
         for (int i = 0; i < height; i++)
@@ -103,7 +103,7 @@ public:
         return multiScalar;
     }
 
-    Matrix matrixMultiplication(const Matrix& m2)
+    Matrix operator*(const Matrix& m2)
     {
         if (this->lenght != m2.lenght)
         {
@@ -136,10 +136,10 @@ int main()
     m1.setValues();
     m2.setValues();
     cout << m1.toString() << endl;
-    Matrix mr = m1.add(m2);
-    Matrix ms = m1.substract(m2);
+    Matrix mr = m1 + m2;
+    Matrix ms = m1 - m2;
     Matrix msp = m1.scalarMultiplication(12.0);
-    Matrix mm = m1.matrixMultiplication(msp);
+    Matrix mm = m1 * msp;
     cout << "====================" << endl;
     cout << mr.toString() << endl;
     cout << "====================" << endl;
