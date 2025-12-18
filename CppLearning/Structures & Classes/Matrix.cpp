@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <cstdlib>
 using namespace std;
 
 class Matrix
@@ -35,7 +36,7 @@ public:
             float* row = new float[lenght];
             for (int j = 0; j < lenght; j++) 
             {
-                row[j] = 2;
+                row[j] = rand() % 20;
             }
             matrix[i] = row;
         }
