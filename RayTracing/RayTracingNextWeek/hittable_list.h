@@ -1,10 +1,8 @@
 #ifndef HITTABLE_LIST_H
 #define HITTABLE_LIST_H
 
+#include "aabb.h"
 #include "hittable.h"
-
-#include <vector>
-
 
 class hittable_list : public hittable {
     public:
@@ -35,6 +33,11 @@ class hittable_list : public hittable {
 
             return hit_anything;
         }
+
+        aabb bounding_box() const override { return bbox; }
+
+    private:
+        aabb bbox;
 };
 
 #endif

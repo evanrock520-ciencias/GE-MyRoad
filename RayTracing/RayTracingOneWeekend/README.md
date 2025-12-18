@@ -1,2 +1,0 @@
-## Raytraicing in one Weekend
-
