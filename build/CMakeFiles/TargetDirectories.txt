@@ -1,0 +1,3 @@
+/home/evanm/Personal-Proyects/Graphics/build/CMakeFiles/tiny_renderer.dir
+/home/evanm/Personal-Proyects/Graphics/build/CMakeFiles/edit_cache.dir
+/home/evanm/Personal-Proyects/Graphics/build/CMakeFiles/rebuild_cache.dir
