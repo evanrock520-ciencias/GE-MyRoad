@@ -1,5 +1,7 @@
 #include "tgaimage.h"
 #include <cmath>
+#include <cstdlib>
+#include <utility>
 
 constexpr TGAColor white = {255, 255, 255, 255};
 constexpr TGAColor green = {0, 255, 0, 0};
@@ -10,11 +12,27 @@ constexpr TGAColor yellow  = {  0, 200, 255, 255};
 auto path = "../Rasterization/images/output.tga";
 
 void line(int ax, int ay, int bx, int by, TGAImage &framebuffer, TGAColor color) {
-    for (float t = 0; t < 1; t += .02) {
-        int x = std::round(ax + (bx - ax) * t);
-        int y = std::round(ay + (by - ay) * t);
-        framebuffer.set(x, y, color);
-
+    bool steep = std::abs(ax-bx) < std::abs(ay-by);
+    if (steep) { // if the line is steep, we transpose the image
+        std::swap(ax, ay);
+        std::swap(bx, by);
+    }
+    if (ax>bx) { // make it left−to−right
+        std::swap(ax, bx);
+        std::swap(ay, by);
+    }
+    int y = ay;
+    float ierror = 0;
+    for (int x=ax; x<=bx; x++) {
+        if (steep) // if transposed, de−transpose
+            framebuffer.set(y, x, color);
+        else
+            framebuffer.set(x, y, color);
+        ierror += 2 * std::abs(by - ay);
+        if (ierror > bx - ax) {
+            y += by > ay ? 1 : -1;
+            ierror -= 2 * (bx - ax);
+        }
     }
 }
 

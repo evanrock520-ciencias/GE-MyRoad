@@ -63,6 +63,7 @@ CMakeFiles/tiny_renderer.dir/Rasterization/main.cpp.o: /home/evanm/Personal-Proy
   /usr/include/c++/14/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/14/bits/stl_iterator_base_types.h \
   /usr/include/c++/14/bits/stl_pair.h \
+  /usr/include/c++/14/bits/stl_relops.h \
   /usr/include/c++/14/bits/stl_uninitialized.h \
   /usr/include/c++/14/bits/stl_vector.h \
   /usr/include/c++/14/bits/streambuf.tcc \
@@ -122,6 +123,7 @@ CMakeFiles/tiny_renderer.dir/Rasterization/main.cpp.o: /home/evanm/Personal-Proy
   /usr/include/c++/14/tuple \
   /usr/include/c++/14/type_traits \
   /usr/include/c++/14/typeinfo \
+  /usr/include/c++/14/utility \
   /usr/include/c++/14/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
@@ -495,7 +497,7 @@ CMakeFiles/tiny_renderer.dir/Rasterization/main.cpp.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o:
 
-/usr/include/features-time64.h:
+/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o:
 
 /usr/include/c++/14/bits/localefwd.h:
 
@@ -563,8 +565,6 @@ CMakeFiles/tiny_renderer.dir/Rasterization/main.cpp.o:
 
 /usr/include/c++/14/bits/locale_classes.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o:
-
 /usr/include/c++/14/tr1/hypergeometric.tcc:
 
 /usr/include/c++/14/debug/debug.h:
@@ -596,6 +596,8 @@ CMakeFiles/tiny_renderer.dir/Rasterization/main.cpp.o:
 /usr/include/c++/14/bits/stl_uninitialized.h:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/usr/include/features-time64.h:
 
 /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h:
 
@@ -677,8 +679,6 @@ CMakeFiles/tiny_renderer.dir/Rasterization/main.cpp.o:
 
 /usr/include/c++/14/bits/nested_exception.h:
 
-/usr/include/features.h:
-
 /usr/include/c++/14/bits/ptr_traits.h:
 
 /usr/include/alloca.h:
@@ -724,6 +724,12 @@ CMakeFiles/tiny_renderer.dir/Rasterization/main.cpp.o:
 /usr/include/c++/14/tr1/ell_integral.tcc:
 
 /usr/include/c++/14/bits/move.h:
+
+/usr/lib/x86_64-linux-gnu/libm.so:
+
+/usr/include/c++/14/ios:
+
+/usr/include/asm-generic/int-ll64.h:
 
 /usr/include/c++/14/backward/binders.h:
 
@@ -771,6 +777,8 @@ CMakeFiles/tiny_renderer.dir/Rasterization/main.cpp.o:
 
 /usr/include/asm-generic/bitsperlong.h:
 
+/usr/include/c++/14/utility:
+
 /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h:
 
 /usr/include/c++/14/bits/refwrap.h:
@@ -790,6 +798,8 @@ CMakeFiles/tiny_renderer.dir/Rasterization/main.cpp.o:
 /usr/include/c++/14/iostream:
 
 /usr/include/strings.h:
+
+/usr/include/features.h:
 
 /usr/include/linux/errno.h:
 
@@ -925,6 +935,8 @@ CMakeFiles/tiny_renderer.dir/Rasterization/main.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
+/usr/include/c++/14/bits/stl_relops.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
 /usr/include/stdio.h:
@@ -1004,9 +1016,3 @@ CMakeFiles/tiny_renderer.dir/Rasterization/main.cpp.o:
 /usr/lib/x86_64-linux-gnu/Scrt1.o:
 
 /usr/lib/x86_64-linux-gnu/libc.so:
-
-/usr/include/c++/14/ios:
-
-/usr/include/asm-generic/int-ll64.h:
-
-/usr/lib/x86_64-linux-gnu/libm.so:

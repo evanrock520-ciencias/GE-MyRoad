@@ -304,8 +304,8 @@ void cornell_smoke() {
     camera cam;
 
     cam.aspect_ratio      = 1.0;
-    cam.image_width       = 600;
-    cam.samples_per_pixel = 200;
+    cam.image_width       = 1440;
+    cam.samples_per_pixel = 2000;
     cam.max_depth         = 50;
     cam.background        = color(0,0,0);
 
@@ -399,7 +399,7 @@ void final_scene(int image_width, int samples_per_pixel, int max_depth) {
 }
 
 int main() {
-    switch (10) {
+    switch (8) {
         case 1:  bouncing_spheres();          break;
         case 2:  checkered_spheres();         break;
         case 3:  earth();                     break;

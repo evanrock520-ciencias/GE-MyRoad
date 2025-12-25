@@ -37,7 +37,7 @@ class camera {
 
         std::cerr << "Iniciando renderizado con " << omp_get_max_threads() << " hilos...\n";
 
-        #pragma omp parallel for schedule(static)
+        #pragma omp parallel for schedule(dynamic, 10)
         for (int j = 0; j < image_height; ++j) { 
         
             if (omp_get_thread_num() == 0) {

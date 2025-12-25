@@ -194,4 +194,5 @@ CMakeFiles/tiny_renderer.dir/Rasterization/main.cpp.o: \
  /usr/include/c++/14/tr1/modified_bessel_func.tcc \
  /usr/include/c++/14/tr1/poly_hermite.tcc \
  /usr/include/c++/14/tr1/poly_laguerre.tcc \
- /usr/include/c++/14/tr1/riemann_zeta.tcc
+ /usr/include/c++/14/tr1/riemann_zeta.tcc /usr/include/c++/14/utility \
+ /usr/include/c++/14/bits/stl_relops.h
